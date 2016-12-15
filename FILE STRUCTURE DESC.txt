@@ -1,0 +1,28 @@
+We have integrated all search Engines into a single file called 
+"IR project".
+All the search engine files have been made accessible to the IR project file so that the user can select any of the search engine and directly run the 64 queries without setting any paths.
+The File Structure is as follows :
+
+source code of all search engines+ results -> IR project 
+
+IR project consists of two types of folder 
+
+1. inputForXSearchEngine : contains the file such as index.ser
+common-words.txt etc which are required by the Search engine to generate results
+
+
+2. CACM-results-forXSearchEngine: contains two sub folders
+    
+2.a Top100 : contains top 100 documents for the query which is the name of the file
+
+2.b Evaluations : Contains Precision and recall table for each query and contains 'results-for-entire-run.txt' which provides us with mean metrics for entire run ( MEAN AVERAGE PRECISION , MEAN RECIPROCAL RANK AND P@5 and p@10 for each query). Also, MEAN AVERAGE PRECISION at rank is stored and averaged for plotting the precision vs recall graph in ' plot2.txt'.
+
+3. Finally, All the source code files of search engines are kept in "source code of all search engines+ results\IRProject\src\irproject" 
+namely,
+a.BM25PseudoRelSearchEngine.java
+b.BM25SearchEngine.java
+c.TFIDFSearchEngine.java
+d.BM25StopWordsPseudoRelSearchEngine.java
+e.Lucene Search Engine.java
+f.EvaluationEngine.java
+g.SnippetGenerationBM25.java
