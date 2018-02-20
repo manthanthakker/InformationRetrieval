@@ -25,4 +25,4 @@ c.TFIDFSearchEngine.java
 d.BM25StopWordsPseudoRelSearchEngine.java
 e.Lucene Search Engine.java
 f.EvaluationEngine.java
-g.SnippetGenerationBM25.java
+g.SnippetGenerationBM25
